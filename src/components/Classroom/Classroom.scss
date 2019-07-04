@@ -1,0 +1,45 @@
+@import '../../../node_modules/include-media/dist/_include-media.scss';
+
+$breakpoints: (
+    small: 376px,
+    medium: 768px,
+    large: 1024px,
+    huge: 1200px,
+    wide: 1400px
+);
+
+
+.buttons{ 
+    margin: 2%;
+    margin-top: 5%;
+
+    @include media ("<wide") {
+        margin-top: 10%;
+    }
+
+    @include media ("<huge") {
+        margin-top: 10%;
+    }
+
+    @include media("<large") {
+        margin-top: 10%;
+    }
+
+    @include media ("<medium") {
+        margin-top: 10%;
+    }
+
+    @include media ("<small") {
+        margin-top: 10%;
+    }
+    
+
+    .button { 
+    position: relative;    
+    width: 32.5%;  
+   
+   
+    
+    }   
+    
+}

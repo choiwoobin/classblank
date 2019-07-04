@@ -1,0 +1,48 @@
+@import '../../../../node_modules/include-media/dist/_include-media.scss';
+@import '../../../../node_modules/open-color/open-color.scss';
+
+
+$breakpoints: (
+    small: 376px,
+    medium: 768px,
+    large: 1024px,
+    huge: 1200px,
+    wide: 1400px
+);
+
+.header {
+    background: $oc-blue-6;
+    box-shadow: 0 0 0 1.5px $oc-blue-9;
+    .header-content {
+        height: 3rem;
+        width: 1400px;
+        margin: 0 auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        
+        display: flex;
+        align-items: center;
+
+        @include media ("<wide") {
+            width: 100%;
+        }
+
+        @include media("<medium") {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .brand {
+          
+            
+        }
+        .middle {
+            font-size: 1.5rem; 
+            font-weight:600;                
+            margin: auto;
+            color: white;
+            
+         
+        }
+       }
+}

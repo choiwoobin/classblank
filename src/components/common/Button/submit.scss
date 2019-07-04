@@ -1,0 +1,55 @@
+@import '../../../../node_modules/include-media/dist/_include-media.scss';
+@import '../../../../node_modules/open-color/open-color.scss';
+
+
+$breakpoints: (
+    small: 376px,
+    medium: 768px,
+    large: 1024px,
+    huge: 1200px,
+    wide: 1400px
+);
+
+.headers{
+    
+    
+   
+
+    
+    .button{
+        position:relative;
+        width: 5%;
+        left: 91%;          
+        
+        @include media ("<wide") {
+            width: 10%;
+            left : 82%;
+        }
+
+        @include media ("<huge") {
+            width: 10%;
+            left : 86%;
+        }
+
+        @include media("<large") {
+            width: 15%;
+            left : 81%;
+        }
+
+        @include media ("<medium") {
+            width: 20%;
+            left : 76%;
+        }
+
+        @include media ("<small") {
+            width: 22%;            
+            left : 74%;
+        }
+
+        
+        
+         
+        
+        
+    }
+}
